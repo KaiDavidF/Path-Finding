@@ -11,7 +11,7 @@ import java.util.PriorityQueue;
 
 
 
-public class AStarIBM extends JFrame {
+public class PathFinder extends JFrame {
 	Container c;
 	
 	Node startNode;
@@ -35,7 +35,7 @@ public class AStarIBM extends JFrame {
 	ArrayList<Node> way;
 	
 	
-	public AStarIBM(int n) {
+	public PathFinder(int n) {
 		this.n = n;
 		field = new Node[n][n];
 		
@@ -359,7 +359,7 @@ public class AStarIBM extends JFrame {
 	}
 	
 	public static void main(String[] args) {
-		AStarIBM finder = new AStarIBM(20);
+		PathFinder finder = new PathFinder(20);
 		System.out.println();
 		finder.setVisible(true);
 	}
