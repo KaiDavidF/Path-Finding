@@ -164,7 +164,7 @@ public class PathFinder extends JFrame {
 	
 		started = true;
 		
-		
+		int counter = 0;
 		priority.add(startNode); //Add the Start Node as the first Node in the Queue
 
 		while(!priority.isEmpty()) {
@@ -191,7 +191,10 @@ public class PathFinder extends JFrame {
 					
 					if (!priority.contains(neigh)) {
 						priority.add(neigh);
+						explored.add(neigh):
+						counter++;
 					}
+					explored.get(counter).setOpen();
 				}
 			}
 		}
